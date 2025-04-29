@@ -32,4 +32,14 @@ app.post('/api/sensor-data', async (req, res) => {
   }
 });
 
+app.get('/api/data', async (req, res) => {
+    try {
+      const [rows] = await pool.query('SELECT * FROM your_table_name');
+      res.json(rows);
+    } catch (error) {
+      console.error('Database error:', error);
+      res.status(500).json({ error: 'Internal Server Error' });
+    }
+  });
+
 app.listen(3000, () => console.log('Server running on port 3000'));
