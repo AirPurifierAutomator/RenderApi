@@ -34,7 +34,7 @@ app.post('/api/sensor-data', async (req, res) => {
 
 app.get('/api/data', async (req, res) => {
     try {
-      const [rows] = await pool.query('SELECT * FROM your_table_name');
+      const [rows] = await pool.query('SELECT * FROM sensor_data');
       res.json(rows);
     } catch (error) {
       console.error('Database error:', error);
