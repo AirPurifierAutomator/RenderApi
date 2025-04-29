@@ -24,6 +24,8 @@ app.post('/api/sensor-data', async (req, res) => {
       'INSERT INTO sensor_data (co, co2, temperature, humidity) VALUES (?, ?, ?, ?)',
       [co, co2, temp, humidity]
     );
+    console.log("Received data:", req.body);
+    res.send("Data received");
     conn.release();
     res.sendStatus(200);
   } catch (err) {
