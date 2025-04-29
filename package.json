@@ -1,1 +1,19 @@
-{"start":"node index.js", "build": "echo 'No build needed'", "name":"airpurifierautomation-backend","version":"1.0.0","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":[],"author":"","license":"ISC","description":"","dependencies":{"express":"^5.1.0","mysql2":"^3.14.1"}}
+{
+    "name": "airpurifierautomation-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js",
+      "build": "echo 'No build needed'",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^5.1.0",
+      "mysql2": "^3.14.1"
+    },
+    "keywords": []
+  }
+  
